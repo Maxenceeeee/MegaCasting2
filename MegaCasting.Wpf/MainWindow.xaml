@@ -33,6 +33,9 @@
                         <RowDefinition Height="auto" />
                         <RowDefinition Height="auto" />
                         <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
                         <RowDefinition Height="*" />
                         <RowDefinition Height="auto" />
                     </Grid.RowDefinitions>
@@ -47,25 +50,28 @@
                     <TextBlock Grid.Column="1" Grid.Row="3" Text="Ville de l'entreprise :" Style="{StaticResource TextBlockStyle}" />
                     <TextBlock Grid.Column="1" Grid.Row="4" Text="Code postal de l'entreprise :" Style="{StaticResource TextBlockStyle}" />
                     <TextBlock Grid.Column="1" Grid.Row="5" Text="Numéro de téléphone de l'entreprise :" Style="{StaticResource TextBlockStyle}" />
-                    <TextBlock Grid.Column="1" Grid.Row="1" Text="Adresse mail de l'entreprise :" Style="{StaticResource TextBlockStyle}" />
-                    <TextBlock Grid.Column="1" Grid.Row="2" Text="Siren de l'entreprise :" Style="{StaticResource TextBlockStyle}" />
-                    <TextBlock Grid.Column="1" Grid.Row="3" Text="Siret de l'entreprise :" Style="{StaticResource TextBlockStyle}" />
+                    <TextBlock Grid.Column="1" Grid.Row="6" Text="Adresse mail de l'entreprise :" Style="{StaticResource TextBlockStyle}" />
+                    <TextBlock Grid.Column="1" Grid.Row="7" Text="Siren de l'entreprise :" Style="{StaticResource TextBlockStyle}" />
+                    <TextBlock Grid.Column="1" Grid.Row="8" Text="Siret de l'entreprise :" Style="{StaticResource TextBlockStyle}" />
 
-                    <ComboBox  Grid.Column="2" Grid.Row="1" Text=""/>
-                    <ComboBox  Grid.Column="2" Grid.Row="2" Text=""/>
-                    <TextBox   Grid.Column="2" Grid.Row="3" Text=""/>
-                    <TextBox   Grid.Column="2" Grid.Row="4" Text=""/>
-                    <TextBox   Grid.Column="2" Grid.Row="5" Text=""/>
+                    <TextBox   Grid.Column="2" Grid.Row="1" Text="" Width="200"/>
+                    <TextBox   Grid.Column="2" Grid.Row="2" Text="" Width="200"/>
+                    <TextBox   Grid.Column="2" Grid.Row="3" Text="" Width="200"/>
+                    <TextBox   Grid.Column="2" Grid.Row="4" Text="" Width="200"/>
+                    <TextBox   Grid.Column="2" Grid.Row="5" Text="" Width="200"/>
+                    <TextBox   Grid.Column="2" Grid.Row="6" Text="" Width="200"/>
+                    <TextBox   Grid.Column="2" Grid.Row="7" Text="" Width="200"/>
+                    <TextBox   Grid.Column="2" Grid.Row="8" Text="" Width="200"/>
 
-                    <StackPanel Grid.Row="7" Grid.ColumnSpan="4" Orientation="Horizontal" FlowDirection="RightToLeft" >
+                    <StackPanel Grid.Row="10" Grid.ColumnSpan="7" Orientation="Horizontal" FlowDirection="RightToLeft" >
                         <Button Content="Soumettre" Width="80" Margin="2" />
                         <Button Content="Annuler"   Width="80" Margin="2"  />
 
                     </StackPanel>
                 </Grid>
             </TabItem>
-            <TabItem Header="Gestion des marques" >
-                <views:BrandView/>
+            <TabItem Header="Gestion des offres" >
+                <views:OffreView/>
             </TabItem>
         </TabControl>
 
