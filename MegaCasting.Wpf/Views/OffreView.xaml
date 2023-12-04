@@ -6,11 +6,13 @@
              xmlns:local="clr-namespace:MegaCasting.Wpf.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+    <GroupBox Header="Les entreprises clientes" Foreground="Blue" Width="500">
+        <Grid>
 
-        <ListBox ItemsSource="{Binding Offres}" DisplayMemberPath="Intitulé">
-        
-            
-        </ListBox>
-    </Grid>
+            <ListBox ItemsSource="{Binding Clients}" DisplayMemberPath="NomEntreprise">
+
+
+            </ListBox>
+        </Grid>
+    </GroupBox>
 </UserControl>

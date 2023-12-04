@@ -12,7 +12,7 @@ namespace MegaCasting.Wpf.ViewModels
     internal class ViewModelOffre : ObservableObject
     {
 
-        private ObservableCollection<MegaCasting.DBLib.Class.Offrecasting> _Offres;
+        private ObservableCollection<MegaCasting.DBLib.Class.Client> _Clients;
 
 
 
@@ -21,10 +21,10 @@ namespace MegaCasting.Wpf.ViewModels
             
             using (MegacastingContext mc = new MegacastingContext())
             {
-                Offres = new ObservableCollection<Offrecasting>(mc.Offrecastings.ToList());
+                Clients = new ObservableCollection<MegaCasting.DBLib.Class.Client>(mc.Clients.ToList());
             }
         }
 
-        public ObservableCollection<Offrecasting> Offres { get => _Offres; set =>  SetProperty(nameof(Offres), ref _Offres,value); }
+        public ObservableCollection<Client> Clients { get => _Clients; set =>  SetProperty(nameof(Clients), ref _Clients,value); }
     }
 }
