@@ -16,6 +16,7 @@
             </ListBox>
             <StackPanel Orientation="Horizontal" FlowDirection="RightToLeft" >
                 <Button x:Name="DeleteClientButton" Content="Supprimer" Width="80" Height="20" Margin="2" Click="DeleteClientButton_Click" />
+                <Button x:Name="AddClientButton" Content="Ajouter" Width="80" Height="20" Margin="2" Click="AddClientButton_Click" />
 
             </StackPanel>
         </Grid>

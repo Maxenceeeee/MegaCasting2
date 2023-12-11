@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MegaCasting.DBLib.Class;
+using Org.BouncyCastle.Bcpg;
+using System.Runtime.InteropServices;
 
 namespace MegaCasting.Wpf.ViewModels
 {
@@ -43,6 +45,15 @@ namespace MegaCasting.Wpf.ViewModels
                     context.SaveChanges();
                 }
                 this.Clients?.Remove(this.SelectedClient);
+            }
+        }
+
+        internal void Refresh()
+        {
+            this.Clients.Clear();
+            using (MegacastingContext mc = new MegacastingContext())
+            {
+                mc.Clients.ToList().ForEach(c => this.Clients.Add(c));
             }
         }
     }

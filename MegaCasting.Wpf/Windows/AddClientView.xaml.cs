@@ -1,5 +1,4 @@
 ﻿using MegaCasting.Wpf.ViewModels;
-using MegaCasting.Wpf.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,32 +11,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MegaCasting.Wpf.Views
+namespace MegaCasting.Wpf.Windows
 {
     /// <summary>
-    /// Logique d'interaction pour OffreView.xaml
+    /// Logique d'interaction pour AddClientView.xaml
     /// </summary>
-    public partial class ClientView : UserControl
+    public partial class AddClientView : Window
     {
-        public ClientView()
+        public AddClientView()
         {
             InitializeComponent();
-            this.DataContext = new ViewModelClient();
-        }
-
-        private void DeleteClientButton_Click(object sender, RoutedEventArgs e)
-        {
-            ((ViewModelClient)this.DataContext).RemoveClient();
+            this.DataContext = new AjouterClientViewModel();
         }
 
         private void AddClientButton_Click(object sender, RoutedEventArgs e)
         {
-            AddClientView? window = new();
-            window.ShowDialog();
-            ((ViewModelClient)this.DataContext).Refresh();
+            ((AjouterClientViewModel)this.DataContext).AddClient();
+            this.Close();
         }
     }
 }
