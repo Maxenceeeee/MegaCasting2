@@ -10,11 +10,10 @@
   <ItemGroup>
     <Folder Include="Converters\" />
     <Folder Include="Converters\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="ViewModels\" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MegaCasting.Core\MegaCasting.Core.csproj" />
     <ProjectReference Include="..\MegaCasting.DBLib\MegaCasting.DBLib.csproj" />
   </ItemGroup>
 
