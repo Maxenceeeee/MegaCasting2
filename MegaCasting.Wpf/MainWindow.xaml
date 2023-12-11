@@ -24,54 +24,6 @@
             </MenuItem>
         </Menu>
         <TabControl Grid.Row="1">
-            <TabItem Header="Ajouter une entreprise">
-                <GroupBox Header="Entreprise" Foreground="Blue" Width="600" Height="auto">
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*" />
-                            <RowDefinition Height="auto" />
-                            <RowDefinition Height="auto" />
-                            <RowDefinition Height="auto" />
-                            <RowDefinition Height="auto" />
-                            <RowDefinition Height="auto" />
-                            <RowDefinition Height="auto" />
-                            <RowDefinition Height="auto" />
-                            <RowDefinition Height="auto" />
-                            <RowDefinition Height="*" />
-                            <RowDefinition Height="auto" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="auto" />
-                            <ColumnDefinition Width="auto" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Column="1" Grid.Row="1" Text="Nom :" Style="{StaticResource TextBlockStyle}" />
-                        <TextBlock Grid.Column="1" Grid.Row="2" Text="Adresse :" Style="{StaticResource TextBlockStyle}" />
-                        <TextBlock Grid.Column="1" Grid.Row="3" Text="Ville :" Style="{StaticResource TextBlockStyle}" />
-                        <TextBlock Grid.Column="1" Grid.Row="4" Text="Code postal :" Style="{StaticResource TextBlockStyle}" />
-                        <TextBlock Grid.Column="1" Grid.Row="5" Text="Numéro de téléphone :" Style="{StaticResource TextBlockStyle}" />
-                        <TextBlock Grid.Column="1" Grid.Row="6" Text="Adresse mail :" Style="{StaticResource TextBlockStyle}" />
-                        <TextBlock Grid.Column="1" Grid.Row="7" Text="Siren :" Style="{StaticResource TextBlockStyle}" />
-                        <TextBlock Grid.Column="1" Grid.Row="8" Text="Siret :" Style="{StaticResource TextBlockStyle}" />
-
-                        <TextBox   Grid.Column="2" Grid.Row="1" Text="" Width="200"/>
-                        <TextBox   Grid.Column="2" Grid.Row="2" Text="" Width="200"/>
-                        <TextBox   Grid.Column="2" Grid.Row="3" Text="" Width="200"/>
-                        <TextBox   Grid.Column="2" Grid.Row="4" Text="" Width="200"/>
-                        <TextBox   Grid.Column="2" Grid.Row="5" Text="" Width="200"/>
-                        <TextBox   Grid.Column="2" Grid.Row="6" Text="" Width="200"/>
-                        <TextBox   Grid.Column="2" Grid.Row="7" Text="" Width="200"/>
-                        <TextBox   Grid.Column="2" Grid.Row="8" Text="" Width="200"/>
-
-                        <StackPanel Grid.Row="10" Grid.ColumnSpan="7" Orientation="Horizontal" FlowDirection="RightToLeft" >
-                            <Button Content="Ajouter" Width="80" Margin="2" />
-                            <Button Content="Annuler"   Width="80" Margin="2"  />
-
-                        </StackPanel>
-                    </Grid>
-                </GroupBox>
-            </TabItem>
             <TabItem Header="Gestion des entreprises" >
                 <views:ClientView/>
             </TabItem>
