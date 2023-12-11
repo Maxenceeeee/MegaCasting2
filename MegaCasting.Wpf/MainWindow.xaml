@@ -72,6 +72,9 @@
                     </Grid>
                 </GroupBox>
             </TabItem>
+            <TabItem Header="Gestion des entreprises" >
+                <views:ClientView/>
+            </TabItem>
             <TabItem Header="Gestion des offres" >
                 <views:OffreView/>
             </TabItem>
