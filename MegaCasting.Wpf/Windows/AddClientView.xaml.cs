@@ -31,5 +31,11 @@ namespace MegaCasting.Wpf.Windows
             ((AjouterClientViewModel)this.DataContext).AddClient();
             this.Close();
         }
+
+        private void UpdateClientButton_Click(object sender, RoutedEventArgs e)
+        {
+            ((AjouterClientViewModel)this.DataContext).AddClient();
+            this.Close();
+        }
     }
 }
