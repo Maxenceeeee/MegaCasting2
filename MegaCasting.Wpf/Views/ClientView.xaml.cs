@@ -39,5 +39,12 @@ namespace MegaCasting.Wpf.Views
             window.ShowDialog();
             ((ViewModelClient)this.DataContext).Refresh();
         }
+
+        private void UpdateClientButton_Click(object sender, RoutedEventArgs e)
+        {
+            AddClientView? window = new();
+            window.ShowDialog();
+            ((ViewModelClient)this.DataContext).Refresh();
+        }
     }
 }

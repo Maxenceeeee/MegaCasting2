@@ -1,4 +1,5 @@
 ﻿using MegaCasting.Wpf.ViewModels;
+using MegaCasting.Wpf.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,18 @@ namespace MegaCasting.Wpf.Views
         {
             InitializeComponent();
             this.DataContext = new ViewModelOffre();
+        }
+
+        private void DeleteClientButton_Click(object sender, RoutedEventArgs e)
+        {
+            ((ViewModelOffre)this.DataContext).RemoveClient();
+        }
+
+        private void AddClientButton_Click(object sender, RoutedEventArgs e)
+        {
+            AddClientView? window = new();
+            window.ShowDialog();
+            ((ViewModelOffre)this.DataContext).Refresh();
         }
     }
 }
